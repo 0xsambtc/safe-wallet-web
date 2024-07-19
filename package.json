@@ -40,6 +40,7 @@
     "@safe-global/safe-core-sdk-types/**/ethers": "^6.11.1",
     "@safe-global/protocol-kit/**/ethers": "^6.11.1",
     "@safe-global/api-kit/**/ethers": "^6.11.1",
+    "@safe-global/safe-deployments": "npm:@0xsambtc/safe-deployments@1.37.2-alpha",
     "@gnosis.pm/zodiac/**/ethers": "^6.11.1"
   },
   "dependencies": {
@@ -54,7 +55,7 @@
     "@mui/material": "^5.14.20",
     "@mui/x-date-pickers": "^5.0.20",
     "@reduxjs/toolkit": "^1.9.5",
-    "@safe-global/api-kit": "^2.3.2",
+    "@safe-global/api-kit": "2.3.2",
     "@safe-global/protocol-kit": "^3.1.1",
     "@safe-global/safe-apps-sdk": "^9.1.0",
     "@safe-global/safe-deployments": "^1.37.1",
