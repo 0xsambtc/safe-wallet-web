@@ -1,3 +1,4 @@
+// fixme: Cannot destructure property 'parent' of 'node' as it is undefined. refs https://github.com/vercel/style-guide/issues/107
 import { type HDNodeWallet, JsonRpcProvider, Wallet } from 'ethers'
 import type { ChainInfo } from '@safe-global/safe-gateway-typescript-sdk'
 import { type WalletInit, createEIP1193Provider } from '@web3-onboard/common'
@@ -58,8 +59,8 @@ const E2EWalletMoule = (chainId: ChainInfo['chainId'], rpcUri: ChainInfo['rpcUri
               // @ts-ignore
               eth_getCode: async ({ params }) => provider.getCode(params[0], params[1]),
 
-              eth_accounts: async () => [wallet.address],
-              eth_requestAccounts: async () => [wallet.address],
+              eth_accounts: async () => [wallet.address as `0x${string}`],
+              eth_requestAccounts: async () => [wallet.address as `0x${string}`],
 
               eth_call: async ({ params }: { params: any }) => wallet.call(params[0]),
 

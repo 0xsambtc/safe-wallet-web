@@ -32,11 +32,12 @@ describe('useOnboard', () => {
           label: 'Wallet 2',
           icon: 'wallet2.svg',
           provider: null as unknown as EIP1193Provider,
-          chains: [{ id: '0x100' }],
+          chains: [{ id: '0x100', namespace: 'evm' }],
           accounts: [
             {
               address: '0x2',
               ens: null,
+              uns: null,
               balance: null,
             },
           ],
@@ -60,11 +61,12 @@ describe('useOnboard', () => {
           label: 'Wallet 1',
           icon: 'wallet1.svg',
           provider: null as unknown as EIP1193Provider,
-          chains: [{ id: '0x4' }],
+          chains: [{ id: '0x4', namespace: 'evm' }],
           accounts: [
             {
               address: '0xinvalid',
               ens: null,
+              uns: null,
               balance: null,
             },
           ],

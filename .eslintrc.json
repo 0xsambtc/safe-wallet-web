@@ -11,7 +11,7 @@
     "@next/next/google-font-display": "off",
     "@next/next/google-font-preconnect": "off",
     "@next/next/no-page-custom-font": "off",
-    "unused-imports/no-unused-imports-ts": "error",
+    "unused-imports/no-unused-imports-ts": "off",
     "@typescript-eslint/consistent-type-imports": "error",
     "no-constant-condition": "warn",
     "react-hooks/exhaustive-deps": [
